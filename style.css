@@ -1,0 +1,241 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+/* .fonts {
+    font-family: "Libre Baskerville", serif;
+    font-family: "Roboto", sans-serif;
+} */
+body {
+    background-color: #0b1d26;
+}
+.cluods {
+    position: absolute;
+    z-index: -300;
+    width: 100vw;
+}
+.cluods__img {
+    width: 100%;
+}
+.rocks {
+    position: absolute;
+    z-index: -200;
+    top: 350px;
+    width: 100vw;
+}
+.rocks__img {
+    width: 100%;
+}
+.ground {
+    position: absolute;
+    z-index: -100;
+    top: 550px;
+    width: 100vw;
+}
+.ground__img {
+    width: 100%;
+}
+
+.content-bg {
+    position: absolute;
+    z-index: -50;
+    top: 1200px;
+    width: 100vw;
+}
+.content-bg-img {
+    width: 100%;
+}
+.content {
+    max-width: 1760px;
+    margin: auto;
+}
+.bg-hero {
+    position: absolute;
+    z-index: -40;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(
+        330.24deg,
+        rgba(11, 29, 38, 0) 31.06%,
+        #0b1d26 108.93%
+    );
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 0;
+}
+.header__logo {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    font-family: "Libre Baskerville", serif;
+    font-size: 24px;
+}
+.header__nav {
+    display: flex;
+}
+.header__nav-item {
+    list-style-type: none;
+    margin: 0 34px;
+}
+.header__nav-item a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+}
+.header__account {
+    font-size: 18px;
+    color: #fff;
+}
+.start {
+    margin-top: 130px;
+    margin-bottom: 400px;
+}
+.start__content {
+    max-width: 950px;
+    margin: 0 auto;
+}
+.line {
+    color: #fbd784;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 6px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 27px;
+}
+.line-inner {
+    width: 72px;
+    height: 2px;
+    background: #fbd784;
+    margin-right: 32px;
+}
+.start__title {
+    font-family: "Libre Baskerville", serif;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 66px;
+}
+.start__scroll {
+    font-family: "Roboto", sans-serif;
+    margin-top: 15px;
+    line-height: 0.5;
+    font-size: 16px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.start__arrow {
+    margin-left: 15px;
+}
+.section {
+    display: flex;
+    margin: 200px auto;
+    justify-content: space-between;
+    max-width: 1460px;
+}
+.section__content {
+    position: relative;
+    width: 780px;
+    height: 542px;
+}
+.section__content-num {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 200px;
+    color: #fff;
+    opacity: 0.2;
+}
+.section__content-wrap {
+    position: absolute;
+    z-index: 20;
+    right: 0;
+    bottom: 0;
+    max-width: 632px;
+}
+.section__title {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-size: 64px;
+    color: #fff;
+    max-width: 550px;
+}
+.section__content-text {
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    font-size: 18px;
+    margin: 27px 0;
+}
+.section__more {
+    color: #fbd784;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 6px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 27px;
+}
+.section__more-img {
+    margin-left: 15px;
+}
+.revers {
+    flex-direction: row-reverse;
+}
+.menu {
+    position: fixed;
+    z-index: 50;
+    right: 80px;
+    top: 50%;
+    height: 240px;
+    margin-top: -120px;
+    width: 77px;
+    background-color: rgba(0, 0, 0, 0.116);
+}
+
+.menu__list-item {
+    position: relative;
+    list-style-type: none;
+    text-align: right;
+    padding-right: 35px;
+    padding-left: 5px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.menu__list-item::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 6px;
+    height: 60px;
+    background-color: #ffffff;
+    opacity: 0.5;
+    transition: opacity 500ms linear;
+}
+
+.menu__list-link {
+    text-decoration: none;
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    opacity: 0.5;
+}
+.selected::after {
+    opacity: 1;
+}
+.clicked {
+    opacity: 1;
+}
