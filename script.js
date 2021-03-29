@@ -1,10 +1,11 @@
-// Parallax
 const cluods = document.querySelector(".cluods");
 const rocks = document.querySelector(".rocks");
 const ground = document.querySelector(".ground");
 const sections = document.querySelectorAll("section");
 const menuLink = document.querySelectorAll('a[href*="#"]');
 const animElements = document.querySelectorAll(".anim");
+
+//Secton elements animation
 
 let options = {
     threshold: 1
@@ -31,6 +32,8 @@ animElements.forEach((el) => {
     observer.observe(el);
 });
 
+// Parallax
+
 document.addEventListener("scroll", (e) => {
     let move = Math.floor(window.scrollY / 5);
     ground.style.transform = `translateY(${move}px)`;
@@ -38,23 +41,9 @@ document.addEventListener("scroll", (e) => {
 
     let winCenter = window.scrollY + window.innerHeight / 2;
 
-    // animElements.forEach((el) => {
-    //     let elCenter =
-    //         el.getBoundingClientRect().top +
-    //         el.getBoundingClientRect().height / 2;
-
-    //     console.log(elCenter);
-
-    //     if (winCenter > elCenter) {
-    //         if (!el.classList.contains("section_animtated")) {
-    //             el.classList.add("section_animtated");
-    //         }
-    //     }
-    // });
-
     sections.forEach((sec) => {
         let secCenter = sec.offsetTop + sec.offsetHeight / 2;
-        if (winCenter > secCenter) {
+        if (winCenter > secCenter - 20) {
             menuLink.forEach((el) => el.classList.remove("clicked"));
             document
                 .querySelector(`a[href*="#${sec.id}"]`)
