@@ -326,7 +326,7 @@ body {
 }
 .footer__links-mail {
     display: block;
-    background-image: url(./gmail.svg);
+    background-image: url(./img/gmail.svg);
     background-size: 30px 30px;
     margin: 0 15px;
     width: 30px;
@@ -334,7 +334,7 @@ body {
 }
 .footer__links-telegram {
     display: block;
-    background-image: url(./telegram.svg);
+    background-image: url(./img/telegram.svg);
     background-size: 30px 30px;
     margin: 0 15px;
     width: 30px;
@@ -342,7 +342,7 @@ body {
 }
 .footer__links-github {
     display: block;
-    background-image: url(./github.svg);
+    background-image: url(./img/github.svg);
     background-size: 30px 30px;
     margin: 0 15px;
     width: 30px;
