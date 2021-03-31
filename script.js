@@ -6,8 +6,10 @@ const menuLink = document.querySelectorAll('a[href*="#"]');
 const animElements = document.querySelectorAll(".anim");
 const loader = document.querySelector(".loader");
 
-document.addEventListener("load", () => {
-    loader.style.display = "none";
+document.addEventListener("readystatechange", () => {
+    if (document.readyState === "complete") {
+        loader.style.display = "none";
+    }
 });
 
 //Secton elements animation

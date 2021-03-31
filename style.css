@@ -524,7 +524,7 @@ body {
 /* LOADER */
 
 .loader__bg {
-    position: absolute;
+    position: fixed;
     z-index: 1500;
     left: 0;
     right: 0;
@@ -533,7 +533,7 @@ body {
     background-color: #ade8f4;
 }
 .loadingio-spinner-interwind-40ns7rzsezn {
-    position: absolute;
+    position: fixed;
     z-index: 2000;
     left: 50%;
     top: 50%;
