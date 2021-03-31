@@ -4,6 +4,11 @@ const ground = document.querySelector(".ground");
 const sections = document.querySelectorAll("section");
 const menuLink = document.querySelectorAll('a[href*="#"]');
 const animElements = document.querySelectorAll(".anim");
+const loader = document.querySelector(".loader");
+
+document.addEventListener("DOMContentLoaded", () => {
+    loader.style.display = "none";
+});
 
 //Secton elements animation
 
