@@ -6,7 +6,7 @@ const menuLink = document.querySelectorAll('a[href*="#"]');
 const animElements = document.querySelectorAll(".anim");
 const loader = document.querySelector(".loader");
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("load", () => {
     loader.style.display = "none";
 });
 
