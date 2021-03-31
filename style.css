@@ -292,11 +292,13 @@ body {
     opacity: 1;
 }
 .footer {
+    margin-bottom: 120px;
+}
+.footer__content-wrap {
     display: flex;
     justify-content: space-between;
     color: #fff;
     font-family: "Roboto", sans-serif;
-    margin-bottom: 120px;
 }
 .footer__logo {
     display: flex;
@@ -316,6 +318,37 @@ body {
     list-style-type: none;
     margin: 16px 0;
 }
+
+.footer__links {
+    display: flex;
+    justify-content: center;
+    margin: 15px auto;
+}
+.footer__links-mail {
+    display: block;
+    background-image: url(./gmail.svg);
+    background-size: 30px 30px;
+    margin: 0 15px;
+    width: 30px;
+    height: 30px;
+}
+.footer__links-telegram {
+    display: block;
+    background-image: url(./telegram.svg);
+    background-size: 30px 30px;
+    margin: 0 15px;
+    width: 30px;
+    height: 30px;
+}
+.footer__links-github {
+    display: block;
+    background-image: url(./github.svg);
+    background-size: 30px 30px;
+    margin: 0 15px;
+    width: 30px;
+    height: 30px;
+}
+
 @media (max-width: 1700px) {
     .content-bg {
         top: 1000px;
@@ -392,7 +425,7 @@ body {
     }
 }
 @media (max-width: 670px) {
-    .footer {
+    .footer__content-wrap {
         flex-direction: column;
     }
     .footer__logo {
